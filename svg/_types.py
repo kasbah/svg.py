@@ -41,10 +41,10 @@ class PreserveAspectRatio:
 
 @dataclass
 class ViewBoxSpec:
-    min_x: int
-    min_y: int
-    width: int
-    height: int
+    min_x: float
+    min_y: float
+    width: float
+    height: float
 
     def __str__(self) -> str:
         return f"{self.min_x} {self.min_y} {self.width} {self.height}"
